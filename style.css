@@ -1,0 +1,80 @@
+html, body {
+    height: 100%; margin: 0; padding: 0; 
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 29px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#search {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+#search:focus {
+    border-color: #4d90fe;
+}
+
+.search-list--visible{
+    display: block !important;
+}
+
+.button-map{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.button{
+    text-align: center;
+    width: 35px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.input-block {
+    width: 300px;
+    position: relative;
+}
+
+.listLocation {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    list-style: none;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 6px 1px rgba(158,158,158,1);
+    -moz-box-shadow: 0 2px 6px 1px rgba(158,158,158,1);
+    box-shadow: 0 2px 6px 1px rgba(158,158,158,1);
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    padding-left: 0;
+    overflow: auto;
+}
+.listLocation li {
+    padding: 10px;
+}
+
+.listLocation li:hover {
+    background: #a3ccff;
+    color: #fff;
+}
+#map {
+    width: 100%;
+    height: 650px;
+}
